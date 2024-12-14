@@ -1,0 +1,23 @@
+h1 {
+    font-size: xx-large;
+    font-weight: 400;
+    display: flex;
+    flex-shrink: 3;
+    text-align: center;
+}
+
+body {
+    font-family: "Segoe UI";
+}
+
+.bottomFooter {
+    font-size: small;
+    font-weight: 300;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+}
