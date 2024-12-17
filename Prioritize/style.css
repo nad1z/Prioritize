@@ -35,8 +35,39 @@ h2 {
 }
 
 .riceEquation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.riceEquationTop {
+    margin-bottom: 0px;
+}
+
+.riceEquationMiddle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.riceEquationResult {
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
 }
+
+hr {
+    height: 1px;
+    width: 200px;
+    margin-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+/* hr .riceEquationMiddle .riceEquationResult {
+    align-items: baseline;
+}
+    */
 
 footer {
     font-weight: 100;
