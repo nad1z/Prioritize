@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="" />
     <meta name="viewport" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="icon" type="images/אייקון " href="images/??" /> -->
     <title>Prioritize.</title>
 </head>
@@ -61,29 +61,39 @@
             </li> 
         </ul>
     </div>
-    <div class="riceEquation">
-        <div class="riceEquationTop">
-            <p><strong>R</strong>each X <strong>I</strong>mpact X <strong>C</strong>onfidence</p>
-        </div>
-        <div class="riceEquationMiddle">
-            <hr />
-            <p>=</p>
-        </div>
-        <div class="riceEquationBottom">
-            <p><strong>E</strong>ffort</p>
-        </div>
-        <div class="riceEquationResult">
-            <p><strong>RICE</strong>
-            <br>
-            SCORE</p>
-        </div>
+    <div class="riceDiagram">
+        <p><strong>R</strong> X <strong>I</strong> X <strong>C</strong> / <strong>E</strong> = <strong>RICE</strong> SCORE</p>
     </div>
-    <!-- Get current year for copyright statement
-    <script>
-    $("spanYear").html(new Date().getFullYear());
-    </script> -->
+    <div class="riceTable">
+        <table>
+            <caption><strong>RICE Calculator</strong></caption>
+            <thead>
+                <tr>
+                    <th>Features Title</th>
+                    <th>Description</th>
+                    <th>Reach</th>
+                    <th>Impact</th>
+                    <th>Confidence</th>
+                    <th>Effort</th>
+                    <th>RICE score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><br></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 <footer>
-    <p> 2025 © Developed by Idan Zehavian</p>
+    <p><span id="currentYear"></span> © Developed by Idan Zehavian</p>
 </footer>
+<script src="js/index.js"></script>
 </html>

@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom:30px;
+    margin-top: -30px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(252, 243, 228);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.riceDescription {
+    font-size: 14px;
+    text-align: left;
+}
+.riceList {
+    font-size: 14px;
+}
+
+.riceDiagram {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.riceTable {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+}
