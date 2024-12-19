@@ -37,8 +37,24 @@ nav {
 .riceDiagram {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+}
+
+.riceDivision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.riceResult {
+    display: flex;
+
+}
+
+.hr {
+    height: 10px;
+    width: 150px;
 }
 
 .riceTable {
