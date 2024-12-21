@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="description" content="" />
     <meta name="viewport" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="icon" type="images/אייקון " href="images/??" /> -->
     <title>Prioritize.</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Prioritize.io</h1>
     <h2>Making prioritization easy and efficient.</h2>
     <nav>
-        <!-- <a href="#home">Home</a> -->
-        <p>RICE</p>
-        <p>MoSCow (Soon)</p>
-        <p>ICE Scoring (Soon)</p>
-        <p>Kano Model (Soon)</p>
-        <p>Value-Effort (Soon)</p>
+      <!-- <a href="#home">Home</a> -->
+      <p>RICE</p>
+      <p>MoSCow (Soon)</p>
+      <p>ICE Scoring (Soon)</p>
+      <p>Kano Model (Soon)</p>
+      <p>Value-Effort (Soon)</p>
     </nav>
     <div class="riceDescription">
-        <p><strong>RICE</strong> is one of the most known ways to prioritize features production based on a few factors.</p>
+      <p>
+        <strong>RICE</strong> is one of the most known ways to prioritize
+        features production based on a few factors.
+      </p>
     </div>
     <div class="riceList">
-        <ul>
-            <li>
-                <strong>Reach</strong>: the number of people you expect the feature to use in a given timeframe.
-                 (this could also be calculated as transaction or conversions).
-                 <br>
-                 <i>Reach can be used as: expected reach of 35K users in a quarter.</i>
-            <li>
-                <strong>Impact</strong>: can reflect a quantitative goal, such as how many new conversions your project or new feature might result when users encounter it, or a more qualitative objective such as increasing customer delight.
-                <br>
-                <i>Impact is mostly measured in a five-tiering system:
-                    <br>
-                   <ul>
-                    <li>3 = Massive impact.</li>
-                    <li>2 = High impact.</li>
-                    <li>1 = Medium impact.</li>
-                    <li>0.5 = Low impact.</li>
-                    <li>0.25 = Minimal Impact.</li>
-                   </ul> 
-                </i>
-            </li>
-            <li>
-                <strong>Confidence</strong>: how confident are we about the reach and impact scores? how much data do we have to back those numbers?
-                <br>
-                <i>You should use a percentage score:
-                    <br>
-                    <ul>
-                        <li>100% = High Confidence.</li>
-                        <li>80% = Medium Confidence.</li>
-                        <li>50% = Low Confidence.</li>
-                    </ul>
-                </i>
-            </li>
-            <li>
-                <strong>Effort</strong>: How much of a time investment will this initiative require from product, design and development? 
-                <br>
-                <i>Measure as persons per month or just calculate the time it will take the team to execute the idea.</i>
-            </li> 
-        </ul>
+      <ul>
+        <li>
+          <strong>Reach</strong>: the number of people you expect the feature to
+          use in a given timeframe. (this could also be calculated as
+          transaction or conversions).
+          <br />
+          <i>Reach can be used as: expected reach of 35K users in a quarter.</i>
+        </li>
+
+        <li>
+          <strong>Impact</strong>: can reflect a quantitative goal, such as how
+          many new conversions your project or new feature might result when
+          users encounter it, or a more qualitative objective such as increasing
+          customer delight.
+          <br />
+          <i
+            >Impact is mostly measured in a five-tiering system:
+            <br />
+            <ul>
+              <li>3 = Massive impact.</li>
+              <li>2 = High impact.</li>
+              <li>1 = Medium impact.</li>
+              <li>0.5 = Low impact.</li>
+              <li>0.25 = Minimal Impact.</li>
+            </ul>
+          </i>
+        </li>
+        <li>
+          <strong>Confidence</strong>: how confident are we about the reach and
+          impact scores? how much data do we have to back those numbers?
+          <br />
+          <i
+            >You should use a percentage score:
+            <br />
+            <ul>
+              <li>100% = High Confidence.</li>
+              <li>80% = Medium Confidence.</li>
+              <li>50% = Low Confidence.</li>
+            </ul>
+          </i>
+        </li>
+        <li>
+          <strong>Effort</strong>: How much of a time investment will this
+          initiative require from product, design and development?
+          <br />
+          <i
+            >Measure as persons per month or just calculate the time it will
+            take the team to execute the idea.</i
+          >
+        </li>
+      </ul>
     </div>
     <div class="riceDiagram">
-        <div class="riceEquationLeft">
-            <p><strong>R</strong>each X <strong>I</strong>mpact X <strong>C</strong>onfidence</p>
-            <hr>
-            <p><strong>E</strong>ffort</p>
-        </div>
-        <div class="riceEquationRight">
-            <p>=</p>
-            <p><strong>RICE</strong><br>SCORE</p>
-        </div>
+      <div class="riceEquationLeft">
+        <p>
+          <strong>R</strong>each X <strong>I</strong>mpact X
+          <strong>C</strong>onfidence
+        </p>
+        <hr />
+        <p><strong>E</strong>ffort</p>
+      </div>
+      <div class="riceEquationRight">
+        <p>=</p>
+        <p><strong>RICE</strong><br />SCORE</p>
+      </div>
     </div>
     <div class="riceTable">
-        <table>
-            <caption><strong>RICE Calculator</strong></caption>
-            <thead>
-                <tr>
-                    <th>Feature Name</th>
-                    <th>Reach</th>
-                    <th>Impact</th>
-                    <th>Confidence</th>
-                    <th>Effort</th>
-                    <th>RICE score</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="text" name = "featureOneName"></td>
-                    <td><input type="number" name = "featureOneReach"></td>
-                    <td><input type="number" name = "featureOneImpact"></td>
-                    <td><input type="number" name = "featureOneConfidence"></td>
-                    <td><input type="number" name = "featureOneEffort"></td>
-                    <td class="featureOneRiceScore"></td>
-                    <td><button>Calculate</button></td>
-                </tr>
-            </tbody>
-        </table>
+      <table>
+        <caption>
+          <strong>RICE Calculator</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th>Feature Name</th>
+            <th>Reach</th>
+            <th>Impact</th>
+            <th>Confidence</th>
+            <th>Effort</th>
+            <th>RICE score</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="featureOneName" /></td>
+            <td><input type="number" name="featureOneReach" /></td>
+            <td><input type="number" name="featureOneImpact" /></td>
+            <td><input type="number" name="featureOneConfidence" /></td>
+            <td><input type="number" name="featureOneEffort" /></td>
+            <td class="featureOneRiceScore"></td>
+            <td><button onclick="calculateRice()">Calculate</button></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    
-</body>
-<footer>
+  </body>
+  <footer>
     <p><span id="currentYear"></span> © Developed by Idan Zehavian</p>
-</footer>
-<script src="js/index.js"></script>
+  </footer>
+  <script src="js/index.js"></script>
 </html>

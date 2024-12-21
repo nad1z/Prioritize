@@ -1,15 +1,16 @@
-//inputs
-var featureOneReach = document.getElementsByClass("featureOneReach");
-var featureOneImpact = document.getElementsByClass("featureOneImpact");
-let featureOneRiceScore = document.querySelector("featureOneRiceScore");
+console.log("hey");
 
-//results 
+
 function calculateRice() {
-    var featureOneRiceScore = Number(featureOneReach*featureOneImpact)
-    document.getElementsById("featureOneRiceScore").innerHTML = "featureOneRiceScore"
-    console.log(featureOneRiceScore)
+  var featureOneReach = document.getElementsByName("featureOneReach")[0].value;
+  var featureOneImpact = document.getElementsByName("featureOneImpact")[0].value;
+  var featureOneConfidence = document.getElementsByName("featureOneConfidence")[0].value;
+  var featureOneEffort = document.getElementsByName("featureOneEffort")[0].value;
+  var featureOneRiceScore = document.get()
+  console.log(featureOneImpact);
+
 }
-onclick("button") = function()
+
 
 //Fotters year auto update
-document.getElementById("currentYear").innerHTML = (new Date()).getFullYear() 
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
