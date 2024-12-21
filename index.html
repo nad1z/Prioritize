@@ -14,9 +14,10 @@
     <nav>
         <!-- <a href="#home">Home</a> -->
         <p>RICE</p>
-        <p>MoSCow (Coming Soon)</p>
-        <p>ICE Scoring (Coming Soon)</p>
-        <p>Kano Model (Coming Soon)</p>
+        <p>MoSCow (Soon)</p>
+        <p>ICE Scoring (Soon)</p>
+        <p>Kano Model (Soon)</p>
+        <p>Value-Effort (Soon)</p>
     </nav>
     <div class="riceDescription">
         <p><strong>RICE</strong> is one of the most known ways to prioritize features production based on a few factors.</p>
@@ -69,23 +70,24 @@
             <caption><strong>RICE Calculator</strong></caption>
             <thead>
                 <tr>
-                    <th>Features Title</th>
-                    <th>Description</th>
+                    <th>Feature Name</th>
                     <th>Reach</th>
                     <th>Impact</th>
                     <th>Confidence</th>
                     <th>Effort</th>
                     <th>RICE score</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><br></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text" name = "featureOneName"></td>
+                    <td><input type="number" name = "featureOneReach"></td>
+                    <td><input type="number" name = "featureOneImpact"></td>
+                    <td><input type="number" name = "featureOneConfidence"></td>
+                    <td><input type="number" name = "featureOneEffort"></td>
+                    <td class="featureOneRiceScore"></td>
+                    <td><button>Calculate</button></td>
                 </tr>
             </tbody>
         </table>

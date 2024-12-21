@@ -44,13 +44,14 @@ nav {
 .riceTable {
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 footer {
     font-weight: 100;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     padding: 0;
 }
