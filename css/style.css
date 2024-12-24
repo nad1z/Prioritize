@@ -70,7 +70,7 @@ hr {
     border-color: black;
 }
 
-.riceTable {
+#riceTable {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -82,15 +82,11 @@ hr {
     align-items: baseline;
     font-size: 14px;
     text-align: left;
-    flex-basis: auto;
     margin-left: 100px;
     margin-right: 200px; 
     margin-top: 50px;
     column-gap: 50px;
     row-gap: 50px;
-}
-.riceList {
-    font-size: 14px;
 }
 
 footer {
@@ -98,7 +94,7 @@ footer {
     font-weight: 100;
     width: 100%;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    padding: 0;
+    position: absolute;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

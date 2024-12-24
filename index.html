@@ -21,8 +21,10 @@
     </div>
     <div class="riceShortDescription">
       <p>
-        <strong>RICE</strong> is one of the most known ways to prioritize
-        features production based on four main factors.
+        <strong>RICE</strong> is  of the most known ways to prioritize
+        features production based on four main factors. The calculated score
+        will be multiplied by 100 to accommodate calculations with smaller
+        numbers, also the results are rounded for prettier scores.
       </p>
     </div>
     <div class="riceDiagram">
@@ -39,7 +41,7 @@
         <p><strong>RICE</strong><br />SCORE</p>
       </div>
     </div>
-    <div class="riceTable">
+    <div id="riceTable">
       <table>
         <caption></caption>
         <thead>
@@ -55,10 +57,10 @@
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" name="featureOneName" /></td>
-            <td><input type="number" name="featureOneReach" /></td>
+            <td><input type="text" name="featureName" /></td>
+            <td><input type="number" name="featureReach" /></td>
             <td>
-              <select name="featureOneImpact" id="featureOneImpact">
+              <select name="featureImpact" id="featureImpact">
                 <option value="3">Massive Impact</option>
                 <option value="2">High Impact</option>
                 <option value="1">Medium Impact</option>
@@ -67,14 +69,14 @@
               </select>
             </td>
             <td>
-              <select name="featureOneConfidence" id="featureOneConfidence">
+              <select name="featureConfidence" id="featureConfidence">
                 <option value="1">High Confidence</option>
                 <option value="0.8">Medium Confidence</option>
                 <option value="0.5">Low Confidence</option>
               </select>
             </td>
-            <td><input type="number" name="featureOneEffort" /></td>
-            <td id="featureOneRiceScore">X</td>
+            <td><input type="number" name="featureEffort" /></td>
+            <td id="featureRiceScore"></td>
             <td><button onclick="calculateRice()">Calculate!</button></td>
           </tr>
         </tbody>
@@ -82,7 +84,8 @@
     </div>
     <div class="riceDescription">
       <div class="reachDescription">
-        <p><strong>Reach</strong>: the number of people you expect the feature to
+        <p>
+          <strong>Reach</strong>: the number of people you expect the feature to
           use in a given timeframe. (this could also be calculated as
           transaction or conversions).
           <br />
@@ -96,8 +99,9 @@
           users encounter it, or a more qualitative objective such as increasing
           customer delight.
           <br />
-          <i>Impact is mostly measured in a five-tiering system:
-          <br />
+          <i
+            >Impact is mostly measured in a five-tiering system:
+            <br />
             <ul>
               <li>3 = Massive impact.</li>
               <li>2 = High impact.</li>
@@ -130,8 +134,8 @@
           initiative require from product, design and development?
           <br />
           <i>
-            Measure as persons per month or just calculate the time it will
-            take the team to execute the idea.
+            Measure as persons per month or just calculate the time it will take
+            the team to execute the idea.
           </i>
         </p>
       </div>
