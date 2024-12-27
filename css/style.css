@@ -78,7 +78,6 @@ hr {
 
 #riceTable {
     display: table;
-    margin-bottom: 50px;
 }
 
 #sortByScore {
@@ -92,13 +91,14 @@ hr {
     font-size: 14px;
     text-align: left;
     margin-left: 100px;
-    margin-right: 200px; 
+    margin-right: 100px; 
     margin-top: 50px;
-    column-gap: 50px;
-    row-gap: 50px;
+    column-gap: 60px;
+    row-gap: 60px;
 }
 
 footer {
+    position: sticky;
     font-size: 14px;
     font-weight: 100;
     width: 100%;
