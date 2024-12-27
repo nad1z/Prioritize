@@ -30,8 +30,7 @@
     <div class="riceDiagram">
       <div class="riceEquationLeft">
         <p>
-          <strong>R</strong>each X <strong>I</strong>mpact X
-          <strong>C</strong>onfidence
+          <strong>R</strong>each X <strong>I</strong>mpact X <strong>C</strong>onfidence
         </p>
         <hr />
         <p><strong>E</strong>ffort</p>
@@ -41,9 +40,8 @@
         <p><strong>RICE</strong><br />SCORE</p>
       </div>
     </div>
-    <div id="riceTable">
-      <table>
-        <caption></caption>
+    <div class="table">
+      <table id="riceTable">
         <thead>
           <tr>
             <th>Feature Name</th>
@@ -51,7 +49,7 @@
             <th>Impact</th>
             <th>Confidence</th>
             <th>Effort</th>
-            <th>RICE score</th>
+            <th id="sortByScore" onclick="sortTable(0)">&#8645;  RICE score</th>
             <th></th>
           </tr>
         </thead>
@@ -76,7 +74,7 @@
               </select>
             </td>
             <td><input type="number" name="featureEffort" /></td>
-            <td id="featureRiceScore"></td>
+            <td id="featureRiceResult"></td>
             <td><button onclick="calculateRice()">Calculate!</button></td>
           </tr>
         </tbody>

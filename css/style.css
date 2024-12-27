@@ -70,10 +70,19 @@ hr {
     border-color: black;
 }
 
-#riceTable {
+.table {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+
+#riceTable {
+    display: table;
+    margin-bottom: 50px;
+}
+
+#sortByScore {
+    cursor: pointer;
 }
 
 .riceDescription {
@@ -94,7 +103,6 @@ footer {
     font-weight: 100;
     width: 100%;
     text-align: center;
-    position: absolute;
     margin-bottom: 0;
     padding-bottom: 0;
 }
