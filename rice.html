@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="" href="images/prioritize-icon.png" />
+    <title>Prioritize.io</title>
+  </head>
+  <body>
+    <h1>Prioritize.io</h1>
+    <h2>For Product Managers By Product Managers.</h2>
+    <div class="topNav">
+      <a href="index.html">Home</a>
+      <a href="rice.html">RICE</a>
+      <a>MoSCow (Soon)</a>
+      <a>ICE Scoring (Soon)</a>
+      <a>Kano Model (Soon)</a>
+      <a>Value-Effort (Soon)</a>
+    </div>
+    <div class="riceShortDescription">
+      <p>
+        <strong>RICE</strong> is  of the most known ways to prioritize
+        features production based on four main factors. 
+        <br>
+        The calculated score
+        will be multiplied by 100 to accommodate calculations with smaller
+        numbers, also the results are rounded for prettier scores.
+      </p>
+    </div>
+    <div class="riceDiagram">
+      <div class="riceEquationLeft">
+        <p>
+          <strong>R</strong>each X <strong>I</strong>mpact X <strong>C</strong>onfidence
+        </p>
+        <hr />
+        <p><strong>E</strong>ffort</p>
+      </div>
+      <div class="riceEquationRight">
+        <p>=</p>
+        <p><strong>RICE</strong><br />SCORE</p>
+      </div>
+    </div>
+    <div class="table">
+      <table id="riceTable">
+        <thead>
+          <tr>
+            <th>Feature Name</th>
+            <th>Reach</th>
+            <th>Impact</th>
+            <th>Confidence</th>
+            <th>Effort</th>
+            <th id="sortByScore" onclick="sortTable(0)">&#8645;  RICE score</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="featureName" /></td>
+            <td><input type="number" name="featureReach" /></td>
+            <td>
+              <select name="featureImpact" id="featureImpact">
+                <option value="3">Massive Impact</option>
+                <option value="2">High Impact</option>
+                <option value="1">Medium Impact</option>
+                <option value="0.5">Low Impact</option>
+                <option value="0.25">Minimal Impact</option>
+              </select>
+            </td>
+            <td>
+              <select name="featureConfidence" id="featureConfidence">
+                <option value="1">High Confidence</option>
+                <option value="0.8">Medium Confidence</option>
+                <option value="0.5">Low Confidence</option>
+              </select>
+            </td>
+            <td><input type="number" name="featureEffort" /></td>
+            <td id="featureRiceResult"></td>
+            <td><button onclick="calculateRice()">Calculate!</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="riceDescription">
+      <div class="reachDescription">
+        <p>
+          <strong>Reach</strong>: the number of people you expect the feature to
+          use in a given timeframe. (this could also be calculated as
+          transaction or conversions).
+          <br />
+          <i>Reach can be used as: expected reach of 35K users in a quarter.</i>
+        </p>
+      </div>
+      <div class="impactDescription">
+        <p>
+          <strong>Impact</strong>: can reflect a quantitative goal, such as how
+          many new conversions your project or new feature might result when
+          users encounter it, or a more qualitative objective such as increasing
+          customer delight.
+          <br />
+          <i
+            >Impact is mostly measured in a five-tiering system:
+            <br />
+            <ul>
+              <li>3 = Massive impact.</li>
+              <li>2 = High impact.</li>
+              <li>1 = Medium impact.</li>
+              <li>0.5 = Low impact.</li>
+              <li>0.25 = Minimal Impact.</li>
+            </ul>
+          </i>
+        </p>
+      </div>
+      <div class="ConfidenceDescription">
+        <p>
+          <strong>Confidence</strong>: how confident are we about the reach and
+          impact scores? how much data do we have to back those numbers?
+          <br />
+          <i>
+            You should use a percentage score:
+            <br />
+            <ul>
+              <li>100% = High Confidence.</li>
+              <li>80% = Medium Confidence.</li>
+              <li>50% = Low Confidence.</li>
+            </ul>
+          </i>
+        </p>
+      </div>
+      <div class="effortDescription">
+        <p>
+          <strong>Effort</strong>: How much of a time investment will this
+          initiative require from product, design and development?
+          <br />
+          <i>
+            Measure as persons per month or just calculate the time it will take
+            the team to execute the idea.
+          </i>
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p><span id="currentYear"></span> © Developed by Idan Zehavian</p>
+  </footer>
+  <script src="js/index.js"></script>
+</html>

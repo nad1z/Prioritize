@@ -20,15 +20,17 @@ let featureConfidence1 = document.getElementById("featureConfidence");
 let featureImpactText = featureImpact1.options[featureImpact1.selectedIndex].textContent;
 let featureConfidenceText = featureConfidence1.options[featureConfidence1.selectedIndex].textContent;
 
-  //adding a table row and cells for each calculation
-let tableRice = document.getElementById("riceTable");
-let newRow = tableRice.insertRow(2);
-let cell1 = newRow.insertCell(0);
-let cell2 = newRow.insertCell(1);
-let cell3 = newRow.insertCell(2);
-let cell4 = newRow.insertCell(3);
-let cell5 = newRow.insertCell(4);
-let cell6 = newRow.insertCell(5);
+//adding a table row and cells for each calculation
+let tableRice, newRow, cell1, cell2, cell3, cell4, cell5, cell6, cell7;
+tableRice = document.getElementById("riceTable");
+newRow = tableRice.insertRow(2);
+cell1 = newRow.insertCell(0);
+cell2 = newRow.insertCell(1);
+cell3 = newRow.insertCell(2);
+cell4 = newRow.insertCell(3);
+cell5 = newRow.insertCell(4);
+cell6 = newRow.insertCell(5);
+cell7 = newRow.insertCell(6);
 
 // inserting to cells
 cell1.innerText = featureName;
@@ -64,6 +66,13 @@ function sortTable() {
 }
 
 //clear all
+// function clearAllInputs() {
+//   let AllInputs = document.querySelectorAll("riceTable");
+//   for (let z = 0; z < AllInputs.length; z++) {
+//   AllInputs[z].value = '';
+//   }
+// }
+
 // <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
 // <input type="text" value="Blabla" id="myInput"></input>
 // or 
@@ -78,4 +87,4 @@ function sortTable() {
 
 //Fotters year auto update
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-console.log("Im Working!")
+// console.log("Im Working!");

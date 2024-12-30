@@ -34,10 +34,65 @@ body {
     transform: scale(1.07);
   }
 
+  footer {
+    position: sticky;
+    font-size: 14px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
-.riceShortDescription {
+/* Home */
+.homeDescription1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 40%;
+    font-size: 110%;
+    font-weight: 100;
+    }
+
+#productManagerDiagram {
+    height: 200px;
+    width: 200px;
+    margin-right: 30px;
+}
+
+.homeDescription2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-right: 5%;
+    font-size: 110%;
+    font-weight: 100;
+}
+
+#vennDiagram {
+    display: block;
+    text-align: center;
+    height: 25%;
+    width: 25%;
+    margin-left: 30px;
+}
+
+#homeLargePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+/* rice */
+  .riceShortDescription {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .riceDiagram {
@@ -97,12 +152,3 @@ hr {
     row-gap: 60px;
 }
 
-footer {
-    position: sticky;
-    font-size: 14px;
-    font-weight: 100;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
