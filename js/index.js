@@ -8,10 +8,13 @@ function calculateRice() {
   let featureEffort = document.getElementsByName("featureEffort")[0].value;
   let featureRiceScore = (featureReach * featureImpact * featureConfidence * 100) / featureEffort;
   let featureRiceResult = (document.getElementById("featureRiceResult").innerHTML = Math.round(featureRiceScore));
-    if (featureRiceScore < 1) {
+  if (featureRiceScore < 1) {
     document.getElementById("featureRiceResult").innerText = "Score is too low :(";
-  } else if (isNaN(featureRiceScore)) {
+    return;
+  }
+  if (isNaN(featureRiceScore)) {
     document.getElementById("featureRiceResult").innerText = "Please insert numbers";
+    return;
   }
 
 // defining dropdown options values
