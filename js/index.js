@@ -68,6 +68,27 @@ function sortTable() {
   }
 }
 
+function saveData() {
+  const table = document.getElementById("riceTable");
+  const rows = table.querySelectorAll("tbody tr");
+  const dataArray = [];
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+    const rowData = Array.from(cells).map(cell => cell.textContent.trim());
+    dataArray.push(rowData);
+  });
+
+  // Save the data in local storage
+  localStorage.setItem("tableData", JSON.stringify(dataArray));
+  console.log("RICE Calculator data is saved to local storage!");
+} 
+
+// To retrieve the data from local storage later
+const savedData = JSON.parse(localStorage.getItem("tableData"));
+// console.log(savedData);
+
+
 //clear all
 // function clearAllInputs() {
 //   let AllInputs = document.querySelectorAll("riceTable");

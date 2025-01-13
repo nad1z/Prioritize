@@ -14,10 +14,9 @@
     <div class="topNav">
       <a href="index.html">Home</a>
       <a href="rice.html">RICE</a>
-      <a>MoSCow (Soon)</a>
-      <a>ICE Scoring (Soon)</a>
-      <a>Kano Model (Soon)</a>
-      <a>Value-Effort (Soon)</a>
+      <a style="filter: blur(1.5px);">MoSCow</a>
+      <a style="filter: blur(1.5px);">Kano Model</a>
+      <a style="filter: blur(1.5px);">Value-Effort</a>
     </div>
     <div class="riceShortDescription">
       <p>
@@ -51,7 +50,7 @@
             <th>Impact</th>
             <th>Confidence</th>
             <th>Effort</th>
-            <th id="sortByScore" onclick="sortTable(0)">&#8645;  RICE score</th>
+            <th id="sortByScore" onclick="sortTable(0); saveData()">&#8645;  RICE score</th>
             <th></th>
           </tr>
         </thead>
@@ -77,7 +76,8 @@
             </td>
             <td><input type="number" name="featureEffort" /></td>
             <td id="featureRiceResult"></td>
-            <td><button onclick="calculateRice()">Calculate!</button></td>
+            <td><button onclick="calculateRice(); saveData()">Calculate!</button></td>
+            <!-- <td><button onclick="saveData()">Save Data</button></td> -->
           </tr>
         </tbody>
       </table>
